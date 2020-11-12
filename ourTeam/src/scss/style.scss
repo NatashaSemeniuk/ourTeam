@@ -1,0 +1,204 @@
+@import "vars";
+@import "mixins";
+@import "general-cars-team";
+
+.container {
+    max-width: 100%;
+}
+
+.card-team {
+    &__header {
+        text-align: center;
+    }
+
+    &__header-subtitle {
+        font-size: 18px;
+        font-family: $font-raleway;
+        color: $team-subtitle-color;
+    }
+
+    &__header-title {
+        font-size: 60px;
+        font-family: $font-roboto;
+        color: $team-color;
+        margin-top: 0.5%;
+    }
+
+    &__team-logo {
+        position: relative;
+    &:before {
+    content: ' ';
+    @include size-header(10%, 1%);
+    @include  position-header1(0, 0, 0, 38%);
+    position: absolute;
+    left: 38%;
+    margin-top: 0.5%;
+    background-color: $team-color;
+    }
+    &:after {
+        content: ' ';
+        @include size-header(10%, 1%);
+        position: absolute;
+        @include position-header2(0, 38%, 0, 0);
+        background-color: $team-color;
+        margin-top: 0.5%;
+}
+}
+    &__card-wrapper {
+        display: flex; 
+        justify-content: center;
+}
+    &__card-wrapper-item {
+        @include size(20%, 15%);
+        padding: 4%;
+        
+    }
+}
+.photo-wrap {
+    border-right: 0.1em solid $team-color;
+    position: relative;
+&__inner {
+    position: relative;
+    &:before{
+        content: '';
+        border: 2px solid $team-color;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        @include size-photo-wrap(30%, 30%);
+        @include block-position ();
+        @include position-photo-wrap(-5%, 0, 0, -3%);
+        }
+
+        &:after{
+        content: '';
+        border: 2px solid $team-color;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        @include size-photo-wrap(30%, 30%);
+        @include block-position ();
+        @include position-photo-wrap(-5%, -3%, 0, 0);
+        }
+    }
+        i:before{
+        content: '';
+        border: 2px solid $team-color;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        @include size-photo-wrap(30%, 30%);
+        @include block-position ();
+        @include position-photo-wrap(-5%, -3%, 0, 0);
+        }
+        i:after{
+        content: '';
+        border: 2px solid $team-color;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        @include size-photo-wrap(30%, 30%);
+        @include block-position ();
+        @include position-photo-wrap(0, -3%, -5%, 0);
+        }
+
+
+&__inner-bottom-corners {
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: $team-color;
+    margin: 2%;
+    text-align: center;
+    >img {
+        max-width: 100%;
+    }
+}
+}
+.card-team-descript {
+    text-align: center;
+    &__title {
+        display: block;
+        font-size: 36px;
+        font-family: $font-roboto;
+        color: $team-descript-color;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 2%;
+        position: relative;
+        
+        &:after {
+        content: $content;
+        background-color: $team-color;
+        position: absolute;
+        margin: 0 0 0 -50px;
+        @include size(30%, 1%);
+        @include position-header(0, 0, -50%, 50%);
+        }
+        }
+        
+    &__subtitle {
+        display: block;
+        font-size: 24px;
+        font-family: $font-raleway;
+        color: $teamDescript-color;
+        line-height: 1.5;
+        margin: 10% 0 0 0;
+        
+    }
+    &__social-list {
+        list-style: none;
+        padding-left: 0;
+
+    }
+    &__social-list-item {
+        display: inline-block;
+    }
+    &__text {
+        font-size: 14px;
+        font-family: $font-raleway;
+        color:$team-text;
+        line-height: 1.714;
+        display: inline-block;
+        max-width: 100%;
+    }
+    &__dashed-line {
+        @include size(3em, 0.5em);
+        background-color: $bg-color;
+        margin: 5% auto;
+        position: relative;
+        &:before {
+        content: ' ';
+        background-color: $team-color;
+        position: absolute;
+        @include size-dashed-line(1em, 0.5em);
+        @include position-header(0, 0, 0, 0);
+        }
+        &:after{
+        content: ' ';
+        background-color: $team-color;
+        @include size-dashed-line(1em, 0.5em);
+        position: absolute;
+        @include position-header(0, 0, 0, 0);
+        }
+}
+&__button {
+    border: none;
+    background-color: $bg-color;
+    border-width: 0.1em;
+    border-color: $team-color;
+    border-style: solid;
+    font-weight: bold;
+    padding: 2% 4%;
+}
+}
+.card-team-footer {
+    display: flex;
+    justify-content: center;
+    &__button {
+        margin: 0.2%;
+        @include size-footer-button(15%, 15%);
+        border-radius: 50%;
+        border: 0.1em solid $team-color;
+        background-color: $bg-color;
+        &:focus {
+        background-color: $team-color;
+        color: $team-color;
+        }
+    }
+}

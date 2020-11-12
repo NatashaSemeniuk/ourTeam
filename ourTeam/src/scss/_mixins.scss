@@ -1,0 +1,38 @@
+@include size-photo-wrap($width, $height) {
+    width: $width;
+    height: $height;  
+}
+@mixin size-header($width, $height) {
+    width: $width;
+    height: $height;  
+}
+@mixin size-footer-button($width, $height) {
+    width: $width;
+    height: $height;  
+}
+@mixin size-dashed-line($width, $height) {
+    width: $width;
+    height: $height;  
+}
+@mixin position-header1($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin position-header2($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin position-photo-wrap($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin block-position () {
+    display: block;
+    position: absolute;
+}

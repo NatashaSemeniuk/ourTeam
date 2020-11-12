@@ -1,0 +1,237 @@
+@charset "UTF-8";
+.container {
+  max-width: 100%;
+}
+
+.card-team__header {
+  text-align: center;
+}
+
+.card-team__header-subtitle {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: #898f8f;
+}
+
+.card-team__header-title {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  color: #FFCC00;
+  margin-top: 0.5%;
+}
+
+.card-team__team-logo {
+  position: relative;
+}
+
+.card-team__team-logo:before {
+  content: " ";
+  height: 1%;
+  width: 10%;
+  position: absolute;
+  left: 38%;
+  margin-top: 0.5%;
+  background-color: #FFCC00;
+}
+
+.card-team__team-logo:after {
+  content: " ";
+  height: 1%;
+  width: 10%;
+  position: absolute;
+  right: 38%;
+  background-color: #FFCC00;
+  margin-top: 0.5%;
+}
+
+.card-team__card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3% auto;
+}
+
+.card-team__card-wrapper-item {
+  width: 20%;
+  height: 15%;
+  padding: 4%;
+}
+
+.photo-wrap {
+  border-right: 0.1em solid #FFCC00;
+  position: relative;
+}
+
+.photo-wrap__inner {
+  position: relative;
+}
+
+.photo-wrap__inner:before {
+  display: block;
+  content: "";
+  position: absolute;
+  border: 2px solid #FFCC00;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  width: 30%;
+  height: 30%;
+  top: -5%;
+  left: -3%;
+}
+
+.photo-wrap__inner:after {
+  display: block;
+  content: "";
+  position: absolute;
+  border: 2px solid #FFCC00;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  width: 30%;
+  height: 30%;
+  top: -5%;
+  right: -3%;
+}
+
+.photo-wrap i:before {
+  display: block;
+  content: "";
+  position: absolute;
+  border: 2px solid #FFCC00;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  width: 30%;
+  height: 30%;
+  bottom: -5%;
+  left: -3%;
+}
+
+.photo-wrap i:after {
+  display: block;
+  content: "";
+  position: absolute;
+  border: 2px solid #FFCC00;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  width: 30%;
+  height: 30%;
+  bottom: -5%;
+  right: -3%;
+}
+
+.photo-wrap__inner-bottom-corners {
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: #FFCC00;
+  margin: 2%;
+  text-align: center;
+}
+
+.photo-wrap__inner-bottom-corners>img {
+  max-width: 100%;
+}
+
+.card-team-descript {
+  text-align: center;
+}
+
+.card-team-descript__title {
+  display: block;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2%;
+  position: relative;
+}
+
+.card-team-descript__title:after {
+  content: " ";
+  width: 30%;
+  height: 1%;
+  background-color: #FFCC00;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  margin: 0 0 0 -50px;
+}
+
+.card-team-descript__subtitle {
+  display: block;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  margin: 10% 0 0 0;
+}
+
+.card-team-descript__social-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-team-descript__social-list-item {
+  display: inline-block;
+}
+
+.card-team-descript__text {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  line-height: 1.714;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.card-team-descript__dashed-line {
+  width: 3em;
+  height: 0.5em;
+  background-color: white;
+  margin: 5% auto;
+  position: relative;
+}
+
+.card-team-descript__dashed-line:before {
+  content: " ";
+  background-color: #FFCC00;
+  width: 1em;
+  height: 0.5em;
+  position: absolute;
+  left: 0;
+}
+
+.card-team-descript__dashed-line:after {
+  content: " ";
+  background-color: #FFCC00;
+  width: 1em;
+  height: 0.5em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.card-team-descript__button {
+  border: none;
+  background-color: #fff;
+  border-width: 0.1em;
+  border-color: #FFCC00;
+  border-style: solid;
+  font-weight: bold;
+  padding: 2% 4%;
+}
+
+.card-team-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card-team-footer__button {
+  margin: 0.2%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0.1em solid #FFCC00;
+  background-color: #fff;
+}
+
+.card-team-footer__button:focus {
+  background-color: #FFCC00;
+  color: #FFCC00;
+}
